@@ -1,0 +1,12 @@
+{% extends "pages/base.html" %}
+
+{% block title %}
+    Blog
+{% endblock %}
+
+{% block content %}
+    <h1> thong tin chi tiet</h1>
+    <p>{{ post.title }}</p>
+    <p>{{ post.body }}</p>
+    <p>{{ post.date }}</p>
+{% endblock %}

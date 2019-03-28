@@ -1,0 +1,15 @@
+{% extends "pages/base.html" %}
+
+{% block title %}
+    Blog
+{% endblock %}
+
+{% block content %}
+    <center>
+        <form action="{% url 'create-post' %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Create">
+        </form>
+    </center>
+{% endblock %}
